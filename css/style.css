@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed red; */
+}
+
+body {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*************************** Container ********************************/
+
+.container-full {
+    flex-grow: 1;
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 60px;
+
+}
+
+.top-container {
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.navbar-bot {
+    flex-shrink: 0;
+    /* la height statica da togliere e sostituire con il contenuto */
+    height: 100px; 
+}
+
+/*************************  Sidebar Section  *************************/
+
+.sidebar-top {
+    flex-shrink: 0;
+
+}
+
+.sidebar-mid {
+    flex-grow: 1;
+    overflow: auto;
+
+}
+
+.sidebar-bot {
+flex-shrink: 0;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar .sidebar-list a {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-mid .container-playlist {
+    display: none;
+}
+
+.logo-l {
+    display: none;
+}
+
+.logo-s {
+    display: block;
+    width: 100%;
+    filter: invert(1);
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 0.7rem;
+}
+
+.logo-xs{
+    display: block;
+    width: 100%;
+    filter: invert(1);
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.list-icon {
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+
+.list-text {
+    display: none;
+}
