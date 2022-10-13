@@ -37,8 +37,11 @@ a {
 
 }
 
+/* ai padri con flex grow dare l'overflow auto */
+
 .main-container {
     flex-grow: 1;
+    overflow: auto;
 }
 
 .navbar-bot {
@@ -109,4 +112,70 @@ flex-shrink: 0;
 
 .list-text {
     display: none;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 1rem;
+    cursor: pointer;
+}
+/************************ Main Container Row  *************************/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.upgrade-bar {
+    flex-basis: 100%;
+    text-align: end;
+    /* height statica da togliere con l'aggiunta del contenuto */
+    height: 50px;
+}
+
+.menu {
+    padding: 1rem;
+    font-size: 0.7rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.row .menu a {
+    padding: 0.5rem;
+}
+
+/**************************** Card Section *****************************/
+
+.card {
+    padding: 0.5rem;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card-border {
+    border-radius: 50%;
+}
+
+.col {
+    flex-basis: 100%;
+}
+
+.col-1-2 {
+    flex-basis: calc(100% / 2);
+}
+
+
+.title-and-sub {
+    text-align: center;
+    padding: 0.3rem;
 }
