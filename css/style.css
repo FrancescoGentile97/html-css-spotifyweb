@@ -6,7 +6,7 @@
 }
 
 body {
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -47,7 +47,7 @@ a {
 .navbar-bot {
     flex-shrink: 0;
     /* la height statica da togliere e sostituire con il contenuto */
-    height: 100px; 
+    height: 100px;
 }
 
 /*************************  Sidebar Section  *************************/
@@ -64,7 +64,7 @@ a {
 }
 
 .sidebar-bot {
-flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .sidebar-list {
@@ -95,7 +95,7 @@ flex-shrink: 0;
     padding: 0.7rem;
 }
 
-.logo-xs{
+.logo-xs {
     display: block;
     width: 100%;
     filter: invert(1);
@@ -114,7 +114,7 @@ flex-shrink: 0;
     display: none;
 }
 
-.btn{
+.btn {
     background-color: black;
     color: white;
     border: 1px solid red;
@@ -123,6 +123,7 @@ flex-shrink: 0;
     padding: 1rem;
     cursor: pointer;
 }
+
 /************************ Main Container Row  *************************/
 
 .row {
@@ -179,3 +180,41 @@ flex-shrink: 0;
     text-align: center;
     padding: 0.3rem;
 }
+
+/***************** card img hover effect  ***********/
+
+.img-container {
+    position: relative;
+}
+
+.card:hover .img-effect {
+    opacity: 1;
+}
+
+.card:hover .img-effect-border {
+    opacity: 1;
+}
+
+.img-effect {
+    position: absolute;
+    top: 0%;
+    padding: 0.7rem 1rem;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    transition: opacity .5s, backdrop-filter .5s;
+}
+
+.img-effect-border {
+position: absolute;
+top: 0%;
+border-radius: 50%;
+/* padding: 0.7rem 1rem; */
+aspect-ratio: 1/1;
+font-size: 2rem;
+opacity: 0;
+backdrop-filter: blur(10px);
+transition: opacity .5s, backdrop-filter .5s;
+}
+
