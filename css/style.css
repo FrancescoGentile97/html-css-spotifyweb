@@ -1,3 +1,11 @@
+:root {
+    --padding-xs: 0.2rem;
+    --padding-s: 0.5rem;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -207,14 +215,126 @@ a {
 }
 
 .img-effect-border {
-position: absolute;
-top: 0%;
-border-radius: 50%;
-/* padding: 0.7rem 1rem; */
-aspect-ratio: 1/1;
-font-size: 2rem;
-opacity: 0;
-backdrop-filter: blur(10px);
-transition: opacity .5s, backdrop-filter .5s;
+    position: absolute;
+    top: 0%;
+    border-radius: 50%;
+    /* padding: 0.7rem 1rem; */
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    transition: opacity .5s, backdrop-filter .5s;
 }
 
+
+/***********************  NavBar  ************************/
+
+.navbar-bot {
+    display: flex;
+}
+
+.left-nav {
+    flex-basis: 25%;
+    align-self: center;
+    display: flex;
+    /* flex-shrink: 0; */
+}
+
+.center-nav {
+    flex-basis: 50%;
+    /* flex-grow: 1; */
+}
+
+.right-nav {
+    flex-basis: 25%;
+    /* flex-shrink: 0; */
+    align-self: center;
+}
+
+.volume-buttons {
+    display: flex;
+}
+
+.volume-buttons i {
+    padding: 0.2rem;
+}
+
+.song-progress-bar {
+    align-self: center;
+}
+
+.buttons-container {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.buttons-container i {
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.progress-container {
+    padding: 1rem;
+    position: relative;
+}
+
+.song-progress-bar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: grey;
+    width: 90%;
+}
+
+.progress-container .progress-overlay {
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 25%;
+  }
+
+  .progress-container .volume-buttons .progress-overlay {
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    left: 5.5rem;
+    top: 1.4rem;
+    width: 25%;
+  }
+
+  .left-nav .icon-left-nav i {
+    padding-right: 0.5rem;
+  } 
+
+  .time {
+    position: absolute;
+    left: -2rem;
+    top: 10px;
+}
+
+  .time-2 {
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+  }
+
+  .img-nav {
+    width: 60px;
+    min-width: 30px;
+  }
+
+
+
+  /********************** Utility **********************/
+
+  .spacing-xs {
+    padding: var(--padding-xs);
+  }
+
+  .spacing-s {
+    padding: var(--padding-s);
+  }
