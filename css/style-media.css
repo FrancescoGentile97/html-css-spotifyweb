@@ -8,11 +8,13 @@
     .sidebar .sidebar-list a {
         display: flex;
         justify-content: flex-start;
+        flex-basis: 20%;
+        padding: 0.2rem;
     }
 
     .sidebar-mid .container-playlist {
-       display: grid;
-       padding: 0.5rem;
+        display: grid;
+        padding: 0.5rem;
     }
 
     .sidebar-mid .container-playlist a {
@@ -43,8 +45,12 @@
         padding: 1rem;
         height: 50px;
     }
-}
 
+    .list-icon .john {
+        display: block;
+    }
+
+}
 
 
 /* Media Query Medium */
@@ -53,6 +59,10 @@
     .col-1-4 {
         flex-basis: calc(100% / 4);
     }
+
+    .john {
+        display: inline-block;
+    }
 }
 
 /* Media Query Large */
@@ -60,5 +70,9 @@
 @media screen and (min-width: 992px) {
     .col-1-6 {
         flex-basis: calc(100% / 6);
+    }
+
+    .list-icon .john {
+        display: block;
     }
 }

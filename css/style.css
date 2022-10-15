@@ -1,4 +1,9 @@
 :root {
+
+    /******************* Color Palette ********************/
+    --color-primary: rgb(21 25 33);
+    --color-secondary: rgb(40 40 40);
+    --color-black: rgb(9 11 18);
     --padding-xs: 0.2rem;
     --padding-s: 0.5rem;
 }
@@ -17,6 +22,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 a {
@@ -42,6 +48,7 @@ a {
 .top-container {
     flex-grow: 1;
     display: flex;
+    overflow: auto;
 
 }
 
@@ -94,6 +101,7 @@ a {
     display: none;
 }
 
+
 .logo-s {
     display: block;
     width: 100%;
@@ -101,6 +109,17 @@ a {
     aspect-ratio: 1 / 1;
     object-fit: contain;
     padding: 0.7rem;
+}
+
+.logo-s-john {
+    display: block;
+    width: 100%;
+    filter: invert(1);
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 0.7rem;
+    background-color: lightgrey;
+    border-radius: 50%;
 }
 
 .logo-xs {
@@ -112,10 +131,15 @@ a {
 }
 
 .list-icon {
+    display: flex;
     padding: 0.3rem;
     font-size: 1.5rem;
     align-items: center;
 
+}
+
+.list-icon .john {
+    display: none;
 }
 
 .list-text {
@@ -231,6 +255,7 @@ a {
 
 .navbar-bot {
     display: flex;
+    flex-shrink: 0;
 }
 
 .left-nav {
@@ -294,9 +319,9 @@ a {
     left: 1rem;
     top: 1rem;
     width: 25%;
-  }
+}
 
-  .progress-container .volume-buttons .progress-overlay {
+.progress-container .volume-buttons .progress-overlay {
     height: 10px;
     border-radius: 5px;
     background-color: black;
@@ -304,37 +329,49 @@ a {
     left: 5.5rem;
     top: 1.4rem;
     width: 25%;
-  }
+}
 
-  .left-nav .icon-left-nav i {
+.left-nav .icon-left-nav i {
     padding-right: 0.5rem;
-  } 
+}
 
-  .time {
+.time {
     position: absolute;
-    left: -2rem;
+    left: -1.5rem;
     top: 10px;
 }
 
-  .time-2 {
+.time-2 {
     position: absolute;
-    right: 1rem;
+    right: 1.5rem;
     top: 10px;
-  }
+}
 
-  .img-nav {
+.img-nav {
     width: 60px;
     min-width: 30px;
-  }
+}
 
 
 
-  /********************** Utility **********************/
+/********************** Utility **********************/
 
-  .spacing-xs {
+.spacing-xs {
     padding: var(--padding-xs);
-  }
+}
 
-  .spacing-s {
+.spacing-s {
     padding: var(--padding-s);
-  }
+}
+
+.primary-color {
+    background-color: var(--color-primary);
+}
+
+.back-black {
+    background-color: var(--color-black);
+}
+
+.secondary-color {
+    background-color: var(--color-secondary);
+}
