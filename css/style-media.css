@@ -50,6 +50,116 @@
         display: block;
     }
 
+
+.navbar-bot {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.left-nav {
+    flex-basis: 25%;
+    align-self: center;
+    display: flex;
+    /* flex-shrink: 0; */
+}
+
+.center-nav {
+    flex-basis: 50%;
+    padding: 0 2rem;
+    /* flex-grow: 1; */
+}
+
+.right-nav {
+    flex-basis: 25%;
+    padding: 0 1rem;
+    /* flex-shrink: 0; */
+    align-self: center;
+}
+
+.volume-buttons {
+    display: flex;
+}
+
+.volume-buttons i {
+    padding: 0.4rem;
+    font-size: 12px;
+}
+
+.song-progress-bar {
+    align-self: center;
+}
+
+.buttons-container {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.buttons-container i {
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.progress-container {
+    padding: 1rem;
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+
+.song-progress-bar {
+    height: 8px;
+    border-radius: 5px;
+    background-color:var(--color-progress-bar);
+     min-width: 50%;
+}
+
+
+
+.progress-container .progress-overlay {
+    height: 8px;
+    border-radius: 5px;
+    background-color:var(--color-overlay-bar);
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 25%;
+}
+
+.progress-container .volume-buttons .progress-overlay {
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--color-overlay-bar);
+    position: absolute;
+    left: 5.8rem;
+    top: 1.5rem;
+    width: 25%;
+}
+
+.left-nav .icon-left-nav i {
+    padding-right: 0.5rem;
+}
+
+.time {
+    position: absolute;
+    left: -1.4rem;
+    top: 10px;
+    font-size: 14px;
+}
+
+.time-2 {
+    position: absolute;
+    right: -1.5rem;
+    top: 10px;
+    font-size: 14px;
+}
+
+.img-nav {
+    width: 60px;
+    min-width: 30px;
+    padding: 0.2rem;
+}
+
 }
 
 
@@ -63,6 +173,115 @@
     .john {
         display: inline-block;
     }
+
+    .navbar-bot {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .left-nav {
+        flex-basis: 25%;
+        align-self: center;
+        display: flex;
+        /* flex-shrink: 0; */
+    }
+
+    .center-nav {
+        flex-basis: 50%;
+        padding: 0 2rem;
+        /* flex-grow: 1; */
+    }
+
+    .right-nav {
+        flex-basis: 25%;
+        padding: 0 1rem;
+        /* flex-shrink: 0; */
+        align-self: center;
+    }
+
+    .volume-buttons {
+        display: flex;
+    }
+
+    .volume-buttons i {
+        padding: 0.4rem;
+        font-size: 12px;
+    }
+
+    .song-progress-bar {
+        align-self: center;
+    }
+
+    .buttons-container {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .buttons-container i {
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+
+    .progress-container {
+        padding: 1rem;
+        position: relative;
+        padding-bottom: 2.5rem;
+    }
+
+
+    .song-progress-bar {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-progress-bar);
+        min-width: 60%;
+    }
+
+
+
+    .progress-container .progress-overlay {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-overlay-bar);
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        width: 25%;
+    }
+
+    .progress-container .volume-buttons .progress-overlay {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-overlay-bar);
+        position: absolute;
+        left: 5.8rem;
+        top: 1.5rem;
+        width: 15%;
+    }
+
+    .left-nav .icon-left-nav i {
+        padding-right: 0.5rem;
+    }
+
+    .time {
+        position: absolute;
+        left: -1.4rem;
+        top: 10px;
+        font-size: 14px;
+    }
+
+    .time-2 {
+        position: absolute;
+        right: -1.5rem;
+        top: 10px;
+        font-size: 14px;
+    }
+
+    .img-nav {
+        width: 60px;
+        min-width: 30px;
+        padding: 0.2rem;
+    }
 }
 
 /* Media Query Large */
@@ -75,4 +294,113 @@
     .list-icon .john {
         display: block;
     }
+
+
+    .navbar-bot {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .left-nav {
+        flex-basis: 25%;
+        align-self: center;
+        display: flex;
+        /* flex-shrink: 0; */
+    }
+
+    .center-nav {
+        flex-basis: 50%;
+        padding: 0 2rem;
+        /* flex-grow: 1; */
+    }
+
+    .right-nav {
+        flex-basis: 25%;
+        padding: 0 1rem;
+        /* flex-shrink: 0; */
+        align-self: center;
+    }
+
+    .volume-buttons {
+        display: flex;
+    }
+
+    .volume-buttons i {
+        padding: 0.4rem;
+        font-size: 12px;
+    }
+
+    .song-progress-bar {
+        align-self: center;
+    }
+
+    .buttons-container {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .buttons-container i {
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+
+    .progress-container {
+        padding: 1rem;
+        position: relative;
+        padding-bottom: 2.5rem;
+    }
+
+
+    .song-progress-bar {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-progress-bar);
+        min-width: 70%;
+    }
+
+
+
+    .progress-container .progress-overlay {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-overlay-bar);
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        width: 25%;
+    }
+
+    .progress-container .volume-buttons .progress-overlay {
+        height: 8px;
+        border-radius: 5px;
+        background-color: var(--color-overlay-bar);
+        position: absolute;
+        left: 5.8rem;
+        top: 1.5rem;
+        width: 25%;
+    }
+
+    .left-nav .icon-left-nav i {
+        padding-right: 0.5rem;
+    }
+
+    .time {
+        position: absolute;
+        left: -1.4rem;
+        top: 10px;
+    }
+
+    .time-2 {
+        position: absolute;
+        right: -1.5rem;
+        top: 10px;
+    }
+
+    .img-nav {
+        width: 60px;
+        min-width: 30px;
+        padding: 0.2rem;
+    }
+
 }

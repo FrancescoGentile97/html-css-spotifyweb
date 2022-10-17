@@ -4,8 +4,12 @@
     --color-primary: rgb(21 25 33);
     --color-secondary: rgb(40 40 40);
     --color-black: rgb(9 11 18);
+    --color-progress-bar:rgb(91 91	91);
+    --color-overlay-bar:rgb(194	194	194);
+    --link-color: rgb(126 128 132);
     --padding-xs: 0.2rem;
     --padding-s: 0.5rem;
+    --padding-m: 1rem;
 }
 
 
@@ -27,6 +31,13 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--link-color);
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--link-color);
 }
 
 
@@ -149,11 +160,12 @@ a {
 .btn {
     background-color: black;
     color: white;
-    border: 1px solid red;
+    border: 1px solid;
     border-radius: 25px;
     font-size: 12px;
-    padding: 1rem;
+    padding: 0.7rem;
     cursor: pointer;
+    margin-top: 0.8rem;
 }
 
 /************************ Main Container Row  *************************/
@@ -168,7 +180,7 @@ a {
     flex-basis: 100%;
     text-align: end;
     /* height statica da togliere con l'aggiunta del contenuto */
-    height: 50px;
+    height: 65px;
 }
 
 .menu {
@@ -267,11 +279,13 @@ a {
 
 .center-nav {
     flex-basis: 50%;
+    padding: 0 2rem;
     /* flex-grow: 1; */
 }
 
 .right-nav {
     flex-basis: 25%;
+    padding: 0 1rem;
     /* flex-shrink: 0; */
     align-self: center;
 }
@@ -281,7 +295,8 @@ a {
 }
 
 .volume-buttons i {
-    padding: 0.2rem;
+    padding: 0.4rem;
+    font-size: 12px;
 }
 
 .song-progress-bar {
@@ -302,19 +317,23 @@ a {
 .progress-container {
     padding: 1rem;
     position: relative;
+    padding-bottom: 2.5rem;
 }
+
 
 .song-progress-bar {
-    height: 10px;
+    height: 8px;
     border-radius: 5px;
-    background-color: grey;
-    width: 90%;
+    background-color:var(--color-progress-bar);
+     min-width: 75%;
 }
 
+
+
 .progress-container .progress-overlay {
-    height: 10px;
+    height: 8px;
     border-radius: 5px;
-    background-color: black;
+    background-color:var(--color-overlay-bar);
     position: absolute;
     left: 1rem;
     top: 1rem;
@@ -322,12 +341,12 @@ a {
 }
 
 .progress-container .volume-buttons .progress-overlay {
-    height: 10px;
+    height: 8px;
     border-radius: 5px;
-    background-color: black;
+    background-color: var(--color-overlay-bar);
     position: absolute;
-    left: 5.5rem;
-    top: 1.4rem;
+    left: 5.8rem;
+    top: 1.5rem;
     width: 25%;
 }
 
@@ -337,19 +356,22 @@ a {
 
 .time {
     position: absolute;
-    left: -1.5rem;
+    left: -1.4rem;
     top: 10px;
+    font-size: 14px;
 }
 
 .time-2 {
     position: absolute;
-    right: 1.5rem;
+    right: -1.5rem;
     top: 10px;
+    font-size: 14px;
 }
 
 .img-nav {
     width: 60px;
     min-width: 30px;
+    padding: 0.2rem;
 }
 
 
@@ -364,6 +386,10 @@ a {
     padding: var(--padding-s);
 }
 
+.spacing-m {
+    padding: var(--padding-m);
+}
+
 .primary-color {
     background-color: var(--color-primary);
 }
@@ -374,4 +400,8 @@ a {
 
 .secondary-color {
     background-color: var(--color-secondary);
+}
+
+.inline-block {
+    display: inline-block;
 }
